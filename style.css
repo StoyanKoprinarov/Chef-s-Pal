@@ -1,19 +1,23 @@
 
 .grid-container {
+border-radius: 15px;
 margin:auto;
 width:1400px;
 display:grid;
 grid-template-columns: repeat(3, auto);
 row-gap: 10px;
 column-gap: 10px;
-background-color: rgb(255, 255, 255);
+background-color: white;
+opacity: 0.8;
 }
 
 .grid-item {
-    background-color: rgb(255, 255, 255);
+   overflow: auto;
+   background-color: white;
 }
 
 #item1 {
+    
     width: 100%;
     height: 100px;
     grid-column-start: 1;
@@ -29,7 +33,9 @@ background-color: rgb(255, 255, 255);
 
 #item2 {
     height:450px;
-    width: 450px
+    width: 450px;
+    overflow: hidden;
+    margin-left: 10px;
 }
 
  #item4 {
@@ -39,25 +45,23 @@ background-color: rgb(255, 255, 255);
     grid-column-start: 1;
     grid-column-end: 4;
 }
-#input1, #input2, #input3 {
-   width: 200px;
-   height: 30px;
-   border: solid 1px lightgray;
-   border-radius: 15px;
-}
 
-#item5 {
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 #item6 {
-    justify-content: space-around;
+    opacity: 0.8;;
+    margin:auto;
+    width:1400px;
+    background-color: white;
+    height:60px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content:flex-start;
 }
 
 #mealImg {
     max-width:100%;
     max-height:100%;
+    border-radius: 20px;
 }
 
 #directions {
@@ -65,15 +69,88 @@ background-color: rgb(255, 255, 255);
    line-height:30px;
    font-weight: lighter;
    font-style: italic;
-   font-family: 'Annie Use Your Telesc'
+   font-family: 'Rock Salt', cursive;
 }
  #directions :first-letter{
     text-transform: capitalize;
 }
 #mealName {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    font-family:'Rock Salt', cursive;
+    font-size: 30px;
+    margin: 0px;
+    color:black;
 }
 #mealOrigin {
-    font-family:'Courier New', Courier, monospace
+    font-family:'Rock Salt', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+     margin: 0px;
+     padding-top: 0px;
+     color:tomato;
+}
+
+.measure {
+    display:flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Rock Salt', cursive;
+    color: tomato;
+    margin:0px;
+
+}
+.ingredient {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    margin:0px;
+}
+#item1 {
+    
+        width: 100%;
+        height: 200px;
+        background-image: url(https://t4.ftcdn.net/jpg/02/44/71/07/360_F_244710705_kJbRGNfdwXq4zfikaaXE77iQCAHsQjt0.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+       
+    }
+    
+body {
+    background-image: url(https://img.freepik.com/free-photo/condiments-prepare-italian-pasta_1220-429.jpg?w=1380&t=st=1675654205~exp=1675654805~hmac=83c5c00fe28ac4dba5f14cf47dc6745b139535ebe968be131a355c2e9c4a06e5);
+    
+    padding: 10px;
+    margin-left: 235px;
+    margin-right: 235px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+}
+
+#headerText {
+    margin-left: 650px;
+    margin-top: 26px;
+   font-size: 120px;
+   color: rgb(216, 222, 220); 
+   font-family: 'Arizonia', cursive;
+   opacity: 0.4;
+}
+
+#searchButton {
+    
+    margin-top: 10px;
+    border-radius: 15px;
+    height:30px;
+    width:100px;
+    background-color: black;
+    color:white;
 }
