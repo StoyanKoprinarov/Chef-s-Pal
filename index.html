@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +13,64 @@
 <body>
     <div class ="grid-container">
         <div class="grid-item" id="item1">1</div>
-        <div class="grid-item" id="item2">2</div>
-        <div class="grid-item" id="item3">3</div>
-        <div class="grid-item" id="item4">4</div>
+        <div class="grid-item" id="item2">
+            <img src="" id="mealImg">
+        </div>
+        <div class="grid-item" id="item3">
+            <h1 id="mealName"></h1>
+            <h2 id="mealOrigin"></h2>
+            <h4 id="ingredients"></h4>
+            <h4 id="measures"></h4>
+            <h4 id="ingredients1"></h4>
+            <h4 id="measures1"></h4>
+            <h4 id="ingredients2"></h4>
+            <h4 id="measures2"></h4>
+            <h4 id="ingredients3"></h4>
+            <h4 id="measures3"></h4>
+            <h4 id="ingredients4"></h4>
+            <h4 id="measures4"></h4>
+            <h4 id="ingredients5"></h4>
+            <h4 id="measures5"></h4>
+            <h4 id="ingredients6"></h4>
+            <h4 id="measures6"></h4>
+            <h4 id="ingredients7"></h4>
+            <h4 id="measures7"></h4>
+            <h4 id="ingredients8"></h4>
+            <h4 id="measures8"></h4>
+            <h4 id="ingredients9"></h4>
+            <h4 id="measures9"></h4>
+            <h4 id="ingredients10"></h4>
+            <h4 id="measures10"></h4>
+            <h4 id="ingredients11"></h4>
+            <h4 id="measures11"></h4>
+            <h4 id="ingredients12"></h4>
+            <h4 id="measures12"></h4>
+            <h4 id="ingredients13"></h4>
+            <h4 id="measures13"></h4>
+            <h4 id="ingredients14"></h4>
+            <h4 id="measures14"></h4>
+            <h4 id="ingredients15"></h4>
+            <h4 id="measures15"></h4>
+            <h4 id="ingredients16"></h4>
+            <h4 id="measures16"></h4>
+        </div>
+        <div class="grid-item" id="item4">
+            <h4 id="directions"></h4>
+        </div>
     </div>
     <div class ="grid-container" id= "item5">
-        <input type="text" 
-               id = "input1" 
-               placeholder = "enter value"
-               value ="">
-        <input id = "input2">
-        <input id = "input3">
     </div> 
     <div class="grid-container" id = "item6">   
-        <button id = "button1">Search By Name</button> 
-        <button id = "button2">Search By Type</button>
-        <button id = "button3">Search By Style</button>
+      <form>
+        <input type="text" 
+        id = "user-inp" 
+        placeholder = "enter value"
+        value ="">
+        <input type="button"
+               value="search"
+               id="searchButton">
+        <div id = "result"></div>       
+      </form>
     </div>
     <script src="script.js"></script> 
 </body>
