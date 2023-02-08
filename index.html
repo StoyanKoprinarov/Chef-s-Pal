@@ -3,6 +3,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Cabin:ital@1&family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Noto+Sans+Symbols+2&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Architects+Daughter&family=Arizonia&family=Babylonica&family=Great+Vibes&family=Pacifico&family=Rock+Salt&family=Yatra+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,24 +61,26 @@
             <h4 id="measures15"class="measure"></h4>
             <h4 id="ingredients16" class="ingredient"></h4>
             <h4 id="measures16"class="measure"></h4>
+        <div id="mealCategory"></div>    
         </div>
         <div class="grid-item" id="item4">
             <h4 id="directions"></h4>
         </div>
-    </div>
-    <div id = "item6">  
-    <div>
-            <h4>Search Random Meal:</h4>
-    </div> 
-    <form>
-        <input type="button"
-               value="search"
-               id="searchButton">
-        <input type="text" 
-               id = "user-inp" 
-               placeholder = "enter value"
-               value ="">             
-    </form>
+        <div class="grid-item" id="item5">
+                <h4 class="heading4">Search Random Meal:</h4> 
+                <button id="searchButton">Search</button>
+                 
+                <h4 class="heading4">Search By Category</h4>
+                <form>
+                    <input type="text"
+                        value="Search Here"
+                        id="searchInput">   
+                    <input type="button"
+                       value="search"
+                       id="searchButton1"
+                       class="button">      
+                </form>  
+        </div>
     </div>
     <script src="script.js"></script> 
 </body>

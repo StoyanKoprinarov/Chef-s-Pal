@@ -1,130 +1,6 @@
 
-.grid-container {
-border-radius: 15px;
-margin:auto;
-width:1400px;
-display:grid;
-grid-template-columns: repeat(3, auto);
-row-gap: 10px;
-column-gap: 10px;
-background-color: white;
-opacity: 0.8;
-}
-
-.grid-item {
-   overflow: auto;
-   background-color: white;
-}
-
-#item1 {
-    
-    width: 100%;
-    height: 100px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-#item3 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    height:450px;
-    width: 940px;
-}
-
-#item2 {
-    height:450px;
-    width: 450px;
-    overflow: hidden;
-    margin-left: 10px;
-}
-
- #item4 {
-    width: 100%;
-    height: 200px;
-    overflow: auto;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-
-#item6 {
-    opacity: 0.8;;
-    margin:auto;
-    width:1400px;
-    background-color: white;
-    height:60px;
-    border-radius: 0 0 15px 15px;
-    display: flex;
-    justify-content:flex-start;
-}
-
-#mealImg {
-    max-width:100%;
-    max-height:100%;
-    border-radius: 20px;
-}
-
-#directions {
-   font-size:20px;
-   line-height:30px;
-   font-weight: lighter;
-   font-style: italic;
-   font-family: 'Rock Salt', cursive;
-}
- #directions :first-letter{
-    text-transform: capitalize;
-}
-#mealName {
-    display: flex;
-    justify-content: center;
-    font-family:'Rock Salt', cursive;
-    font-size: 30px;
-    margin: 0px;
-    color:black;
-}
-#mealOrigin {
-    font-family:'Rock Salt', cursive;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-     margin: 0px;
-     padding-top: 0px;
-     color:tomato;
-}
-
-.measure {
-    display:flex;
-    justify-content: center;
-    font-size: 15px;
-    font-family: 'Rock Salt', cursive;
-    color: tomato;
-    margin:0px;
-
-}
-.ingredient {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    font-family: 'Rock Salt', cursive;
-    font-weight: bold;
-    margin:0px;
-}
-#item1 {
-    
-        width: 100%;
-        height: 200px;
-        background-image: url(https://t4.ftcdn.net/jpg/02/44/71/07/360_F_244710705_kJbRGNfdwXq4zfikaaXE77iQCAHsQjt0.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        overflow: hidden;
-        border-radius: 15px 15px 0 0;
-       
-    }
-    
 body {
     background-image: url(https://img.freepik.com/free-photo/condiments-prepare-italian-pasta_1220-429.jpg?w=1380&t=st=1675654205~exp=1675654805~hmac=83c5c00fe28ac4dba5f14cf47dc6745b139535ebe968be131a355c2e9c4a06e5);
-    
     padding: 10px;
     margin-left: 235px;
     margin-right: 235px;
@@ -136,21 +12,193 @@ body {
   
 }
 
-#headerText {
-    margin-left: 650px;
-    margin-top: 26px;
-   font-size: 120px;
-   color: rgb(216, 222, 220); 
-   font-family: 'Arizonia', cursive;
-   opacity: 0.4;
+
+.grid-container {
+    border-radius: 15px;
+    margin:auto;
+    width:1400px;
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 5px;
+    column-gap: 10px;
+    opacity: 0.8;
+    background-color: rgb(252, 252, 252);
+    }
+
+
+.grid-item {
+    overflow: auto;
+    background-color: white;
+    }
+    
+#item1 { 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: 180px;
+    background-image: url(https://t4.ftcdn.net/jpg/02/44/71/07/360_F_244710705_kJbRGNfdwXq4zfikaaXE77iQCAHsQjt0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+       
+    }
+   
+#item2 {
+    height:450px;
+    width: 450px;
+    overflow: hidden;
+    margin-left: 6px;
+    background-color: white;
+    margin-bottom: 5px;
+    }
+
+#item3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height:450px;
+    width: 934px;
+    background-color: rgb(255, 255, 255);
+    }
+    
+#item4 {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(252, 252, 252);
+    margin-bottom: 0px;
+   
+    }
+  
+#item5 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(255, 255, 255);
+   
+       
+    }
+    
+    #mealImg {
+        max-width:100%;
+        max-height:100%;
+        border-radius: 20px;
+        padding-top: 5px;
+        
+    }
+
+    #directions {
+        font-size:20px;
+        line-height:30px;
+        font-weight: lighter;
+        font-style: italic;
+        font-family: 'Rock Salt', cursive;
+    }
+    
+    #directions :first-letter{
+        text-transform: capitalize;
+    }
+    
+    #mealName {
+        display: flex;
+        justify-content: center;
+        font-family:'Rock Salt', cursive;
+        font-size: 30px;
+        margin: 0px;
+        color:black;
+    }
+
+    #mealOrigin {
+        font-family:'Rock Salt', cursive;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+         margin: 0px;
+         padding-top: 0px;
+         color:tomato;
+    }
+    .measure {
+        display:flex;
+        justify-content: center;
+        font-size: 15px;
+        font-family: 'Rock Salt', cursive;
+        color: tomato;
+        margin:0px;
+    }
+
+    .ingredient {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        font-family: 'Rock Salt', cursive;
+        font-weight: bold;
+        margin:0px;
+    }
+
+    #headerText {
+       margin-left: 650px;
+       margin-top: 26px;
+       font-size: 120px;
+       color: rgb(216, 222, 220); 
+       font-family: 'Arizonia', cursive;
+       opacity: 0.4;
+    }
+
+    #searchButton {
+        margin-top: 10px;
+        border-radius: 15px;
+        height:30px;
+        width:100px;
+        background-color: black;
+        color:white;
+    }
+
+    #searchButton1 {
+        margin-top: 10px;
+        border-radius: 15px;
+        height:30px;
+        width:100px;
+        background-color: black;
+        color:white;
+    }
+
+    #searchButton2 {
+        margin-top: 10px;
+        border-radius: 15px;
+        height:30px;
+        width:100px;
+        background-color: black;
+        color:white;
+    }
+        
+
+    .heading4 {
+        margin-top: 3px;
+        margin-right: 5px;
+        font-size: 30px;
+        font-family: 'Caveat', cursive;
+        color:tomato; 
+    }
+li  img{
+    width: 150px;
+    height:150px;
+    
 }
 
-#searchButton {
-    
-    margin-top: 10px;
-    border-radius: 15px;
-    height:30px;
-    width:100px;
-    background-color: black;
-    color:white;
+li {
+    list-style:none;
+    display: inline-block;
+    margin: 10px;
+   
+}
+
+#div1{
+    width: 200px;
+    height:50px;
 }

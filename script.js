@@ -1,4 +1,8 @@
+
+
 let button = document.querySelector('#searchButton')
+let button1 = document.querySelector('#searchButton1')
+let button2 = document.querySelector('#searchButton2')
 async function getData(event){
     event.preventDefault()   
 fetch(`https://themealdb.com/api/json/v1/1/random.php`)
@@ -80,8 +84,6 @@ fetch(`https://themealdb.com/api/json/v1/1/random.php`)
         let measures15 = document.querySelector("#measures15")
         measures15.innerText = data.meals[0].strMeasure16
     
-        
-
 })
 
 .catch(err => 
@@ -90,3 +92,50 @@ fetch(`https://themealdb.com/api/json/v1/1/random.php`)
 
 }
 button.onclick = getData
+
+
+let button4 = document.querySelector('#searchButton1')
+let mealCategory = document.querySelector('#mealCategory')
+async function getData1(event){
+   event.preventDefault()
+let textInput = document.querySelector('#searchInput').value
+const url = `https://themealdb.com/api/json/v1/1/filter.php?c=${textInput}`
+console.log(url)
+
+fetch(url)
+ .then(res =>  
+    res.json()
+ )
+ .then((res) => { 
+  const mealCategory = res.meals
+  mealCategory.map((item, i) => {
+      console.log(item);
+      let mealCategory = document.querySelector('#mealCategory')
+      const image  = res.meals[i].strMealThumb
+      const name = res.meals[i].strMeal
+const li = `<li> <img class='small-img' src=${image}>  <div id="div1">${name}</div></li>`
+mealCategory.innerHTML += li
+
+    })
+})
+}
+  button4.onclick = getData1
+
+
+let button5 = document.querySelector("#searchButton1")
+
+
+  function myFunction () {
+  
+    document.getElementById("item5").style.backgroundColor = "rgb(62,58,58)";
+    document.getElementById("item4").style.backgroundColor = "rgb(62,58,58)";
+    document.getElementById("mealImg").src = "https://media.istockphoto.com/id/491663447/vector/vegetable-icons-set.jpg?s=612x612&w=0&k=20&c=8Ql4Y1VFcbWTP-D_713iklx4jFomYDP5TQoYPc3yQPY=";
+    document.getElementById("directions").innerText= ""
+    document.getElementById("measures").innerText= ""
+  }
+  
+  
+   button5.onclick = myFunction
+
+
+
