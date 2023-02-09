@@ -70,17 +70,20 @@ body {
     grid-column-end: 4;
     background-color: rgb(252, 252, 252);
     margin-bottom: 0px;
+    
    
     }
   
 #item5 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    height: 80px;
+    height: 60px;
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(62,58,58);
+    padding-top: 20px;
+    border-radius: 0 0 15px 15px;
    
        
     }
@@ -99,6 +102,7 @@ body {
         font-weight: lighter;
         font-style: italic;
         font-family: 'Rock Salt', cursive;
+        padding: 10px;
     }
     
     #directions :first-letter{
@@ -151,43 +155,53 @@ body {
     }
 
     #searchButton {
+        margin-left: 10px;
         margin-top: 10px;
         border-radius: 15px;
         height:30px;
         width:100px;
         background-color: black;
-        color:white;
+        color:tomato;
     }
 
     #searchButton1 {
+        margin-left: 30px;
         margin-top: 10px;
+        margin-right: 50px;
         border-radius: 15px;
         height:30px;
         width:100px;
         background-color: black;
-        color:white;
+        color:tomato;
     }
 
     #searchButton2 {
+        margin-right: 150px;
         margin-top: 10px;
+        margin-left: 30px;
         border-radius: 15px;
         height:30px;
         width:100px;
         background-color: black;
-        color:white;
+        color:tomato;
+        
     }
         
-
     .heading4 {
+
+        margin-left: 180px;
         margin-top: 3px;
-        margin-right: 5px;
         font-size: 30px;
         font-family: 'Caveat', cursive;
         color:tomato; 
     }
 li  img{
-    width: 150px;
-    height:150px;
+    width: 200px;
+    height:200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
     
 }
 
@@ -195,10 +209,51 @@ li {
     list-style:none;
     display: inline-block;
     margin: 10px;
-   
+    margin-bottom: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    text-align: center;
+    
+    
+    
+
 }
 
-#div1{
+.div1{
+    display:flex;
     width: 200px;
     height:50px;
+    justify-content: center;
+    
+    
+}
+
+
+#searchInput {
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 50px;
+   
+
+} 
+
+#searchInput1 {
+    height: 25px;
+    border-radius: 10px;
+} 
+
+
+.paragraph {
+    display:none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 140px;
+    margin-left:100px;
+    width:700px;
+    font-style: italic;
+    
 }

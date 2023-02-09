@@ -24,7 +24,7 @@
         <div class="grid-item" id="item2">
             <img src="" id="mealImg">
         </div>
-        <div class="grid-item" id="item3">
+        <div class="grid-item" id="item3" value="">
             <h1 id="mealName" class="measure"></h1>
             <h2 id="mealOrigin" class="measure"></h2>
             <h4 id="ingredients" class="ingredient"></h4>
@@ -62,6 +62,10 @@
             <h4 id="ingredients16" class="ingredient"></h4>
             <h4 id="measures16"class="measure"></h4>
         <div id="mealCategory"></div>    
+        <p class="paragraph">Chef's pal is an application that will save you time,
+             give you different ideas on meal preparation and at 
+             the same time help you become a better chef. Start by choosing one of the 
+            three different search methods! </p>
         </div>
         <div class="grid-item" id="item4">
             <h4 id="directions"></h4>
@@ -69,19 +73,27 @@
         <div class="grid-item" id="item5">
                 <h4 class="heading4">Search Random Meal:</h4> 
                 <button id="searchButton">Search</button>
-                 
-                <h4 class="heading4">Search By Category</h4>
                 <form>
                     <input type="text"
-                        value="Search Here"
-                        id="searchInput">   
+                        value=""
+                        id="searchInput"
+                        placeholder="Search By Category">   
                     <input type="button"
-                       value="search"
+                       value="Search"
                        id="searchButton1"
-                       class="button">      
+                       class="button">     
+                    <input type="text"
+                        value=""
+                        id="searchInput1"
+                        placeholder="Search By Name">
+                    <input type="button"
+                        value="Search"
+                        id="searchButton2"
+                        class="button">        
                 </form>  
         </div>
     </div>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
+     
 </body>
 </html>
