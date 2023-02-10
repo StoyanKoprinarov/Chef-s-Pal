@@ -88,113 +88,124 @@ body {
        
     }
     
-    #mealImg {
-        max-width:100%;
-        max-height:100%;
-        border-radius: 20px;
-        padding-top: 5px;
+#mealImg {
+    max-width:100%;
+    max-height:100%;
+    border-radius: 20px;
+    padding-top: 5px;
         
     }
 
-    #directions {
-        font-size:20px;
-        line-height:30px;
-        font-weight: lighter;
-        font-style: italic;
-        font-family: 'Rock Salt', cursive;
-        padding: 10px;
+#directions {
+    font-size:20px;
+    line-height:30px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Rock Salt', cursive;
+    padding: 10px;
+
     }
     
-    #directions :first-letter{
-        text-transform: capitalize;
+#directions :first-letter{
+    text-transform: capitalize;
+
     }
     
-    #mealName {
-        display: flex;
-        justify-content: center;
-        font-family:'Rock Salt', cursive;
-        font-size: 30px;
-        margin: 0px;
-        color:black;
+#mealName {
+    display: flex;
+    justify-content: center;
+    font-family:'Rock Salt', cursive;
+    font-size: 30px;
+    margin: 0px;
+    color:black;
+
     }
 
-    #mealOrigin {
-        font-family:'Rock Salt', cursive;
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-         margin: 0px;
-         padding-top: 0px;
-         color:tomato;
+#mealOrigin {
+    font-family:'Rock Salt', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 0px;
+    padding-top: 0px;
+    color:tomato;
+
     }
-    .measure {
-        display:flex;
-        justify-content: center;
-        font-size: 15px;
-        font-family: 'Rock Salt', cursive;
-        color: tomato;
-        margin:0px;
+.measure {
+    display:flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Rock Salt', cursive;
+    color: tomato;
+    margin:0px;
+
     }
 
-    .ingredient {
-        display: flex;
-        justify-content: center;
-        font-size: 15px;
-        font-family: 'Rock Salt', cursive;
-        font-weight: bold;
-        margin:0px;
+.ingredient {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+     margin:0px;
+
     }
 
-    #headerText {
-       margin-left: 650px;
-       margin-top: 26px;
-       font-size: 120px;
-       color: rgb(216, 222, 220); 
-       font-family: 'Arizonia', cursive;
-       opacity: 0.4;
+#headerText {
+    margin-left: 650px;
+    margin-top: 26px;
+    font-size: 120px;
+    color: rgb(216, 222, 220); 
+    font-family: 'Arizonia', cursive;
+    opacity: 0.4;
+
     }
 
-    #searchButton {
-        margin-left: 10px;
-        margin-top: 10px;
-        border-radius: 15px;
-        height:30px;
-        width:100px;
-        background-color: black;
-        color:tomato;
+#searchButton {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    height:30px;
+    width:100px;
+    background-color: black;
+    color:tomato;
+
     }
 
-    #searchButton1 {
-        margin-left: 30px;
-        margin-top: 10px;
-        margin-right: 50px;
-        border-radius: 15px;
-        height:30px;
-        width:100px;
-        background-color: black;
-        color:tomato;
+#searchButton1 {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 50px;
+    border-radius: 15px;
+    height:30px;
+    width:100px;
+    background-color: black;
+    color:tomato;
+
     }
 
-    #searchButton2 {
-        margin-right: 150px;
-        margin-top: 10px;
-        margin-left: 30px;
-        border-radius: 15px;
-        height:30px;
-        width:100px;
-        background-color: black;
-        color:tomato;
+#searchButton2 {
+    margin-right: 150px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 15px;
+    height:30px;
+    width:100px;
+    background-color: black;
+    color:tomato;
         
     }
         
-    .heading4 {
+.heading4 {
 
-        margin-left: 180px;
-        margin-top: 3px;
-        font-size: 30px;
-        font-family: 'Caveat', cursive;
-        color:tomato; 
+    margin-left: 180px;
+    margin-top: 3px;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    color:tomato; 
+
     }
+
 li  img{
     width: 200px;
     height:200px;
@@ -227,8 +238,7 @@ li {
     width: 200px;
     height:50px;
     justify-content: center;
-    
-    
+
 }
 
 
@@ -236,7 +246,6 @@ li {
     height: 25px;
     border-radius: 10px;
     margin-left: 50px;
-   
 
 } 
 
@@ -244,7 +253,6 @@ li {
     height: 25px;
     border-radius: 10px;
 } 
-
 
 .paragraph {
     display:none;
@@ -256,4 +264,13 @@ li {
     width:700px;
     font-style: italic;
     
+}
+
+.paragraph1 {
+    display:none;
+    text-align: center;
+    margin-top:200px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
 }

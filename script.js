@@ -1,22 +1,22 @@
-
-
 let button = document.querySelector('#searchButton')
 let button1 = document.querySelector('#searchButton1')
 let button2 = document.querySelector('#searchButton2')
+let button3 = document.querySelector('#searchButton1')
+let button4 = document.querySelector('#searchButton1')
+let mealCategory = document.querySelector('#mealCategory')
 
+window.onload = startScreen
 
-
-
-window.onload = myFunction1
 async function getData(event){
     event.preventDefault()   
     document.getElementById("mealCategory").innerText= ""
     document.querySelector(".paragraph").style.display="none"
+    document.querySelector(".paragraph1").style.display="none"
 fetch(`https://themealdb.com/api/json/v1/1/random.php`)
- .then(res =>  { 
+.then(res =>  { 
     return res.json()
- })
- .then(data => {
+})
+.then(data => {
         console.log(data)
         document.getElementById("item4").style.backgroundColor = "white";
         let mealImg = document.querySelector("#mealImg")
@@ -91,19 +91,16 @@ fetch(`https://themealdb.com/api/json/v1/1/random.php`)
         ingredients15.innerText = data.meals[0].strIngredient16
         let measures15 = document.querySelector("#measures15")
         measures15.innerText = data.meals[0].strMeasure16
-        
-    
 })
-
 .catch(err => 
     console.log("something went wrong...", err)
   );
-
 }
+
 button.onclick = getData
 
 
-function myFunction () {
+function clearScreen () {
   
   document.getElementById("item5").style.backgroundColor = "rgb(62,58,58)";
   document.getElementById("item4").style.backgroundColor = "rgb(62,58,58)";
@@ -146,26 +143,23 @@ function myFunction () {
   document.getElementById("directions").innerText=""
 }
 
-let button4 = document.querySelector('#searchButton1')
-let mealCategory = document.querySelector('#mealCategory')
+
 async function getData1(event){
    event.preventDefault()
    document.querySelector(".paragraph").style.display="none"
-   myFunction()
+   document.querySelector(".paragraph1").style.display="none"
+   clearScreen()
 
 let textInput = document.querySelector('#searchInput').value
 const url = `https://themealdb.com/api/json/v1/1/filter.php?c=${textInput}`
-console.log(url)
-
 fetch(url)
  .then(res =>  
     res.json()
  )
- .then((res) => { 
+.then((res) => { 
   const mealCategory = res.meals
 
   mealCategory.map((item, i) => {
-      console.log(item);
       let mealCategory = document.querySelector('#mealCategory')
       const image  = res.meals[i].strMealThumb
       const name = res.meals[i].strMeal
@@ -173,17 +167,15 @@ fetch(url)
       mealCategory.innerHTML += li
   })
  })
-
- 
-
 }
-  button4.onclick = getData1
+
+button4.onclick = getData1
   
-  
-  async function getData2(event){
+async function getData2(event){
     event.preventDefault() 
     document.querySelector(".paragraph").style.display="none"
-    document.getElementById("mealCategory").innerText= "" 
+    document.querySelector(".paragraph1").style.display="none"
+    document.getElementById("mealCategory").innerText="" 
     let textInput1 = document.querySelector('#searchInput1').value 
 fetch(`https://themealdb.com/api/json/v1/1/search.php?s=${textInput1}`)
  .then(res =>  { 
@@ -269,12 +261,12 @@ fetch(`https://themealdb.com/api/json/v1/1/search.php?s=${textInput1}`)
 .catch(err => 
     console.log("something went wrong...", err)
   );
-
 }
+
 button2.onclick = getData2
 
 
-function myFunction1 () {
+function startScreen () {
   
   document.getElementById("item5").style.backgroundColor = "rgb(62,58,58)";
   document.getElementById("item4").style.backgroundColor = "rgb(62,58,58)";
@@ -317,5 +309,15 @@ function myFunction1 () {
   document.getElementById("directions").innerText=""
   document.querySelector('.paragraph').style.display="block"
   
-  }
+}
+  
+  button3.addEventListener('click', function () {
+    let searchInput = document.querySelector('#searchInput').value
+    let par1 = document.querySelector('.paragraph1')
+      if(searchInput == '') {
+        par1.style.display = "block"    
 
+    }
+});
+  
+ 
